@@ -43,6 +43,22 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="/db.js"></script>
   <script src="index.js"></script>
+  <script>
+    // if (navigator.serviceWorker) {}             same as line below
+    if ("serviceWorker" in navigator) {
+      // compatible with service workers
+      window.addEventListener('load', () => {
+        navigator
+        .serviceWorker
+        .register('/sw.js')
+        .then(registration => {
+          console.log("Service Worker registration success:", registration)
+        })
+        .catch(error => console.log("Service Worker registration error:", error))
+      })
+    }
+  </script>
 </body>
 </html>
