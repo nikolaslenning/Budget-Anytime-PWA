@@ -3,6 +3,8 @@
 
 Budget Anytime is a existing Budget Tracker application where I have added offline access and functionality. The user will be able to add expenses and deposits to their budget with or without an internet connection. When entering transactions offline, they should still populate the total when brought back online. Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
 
+![Webpage screenshot](public/icons/Screenshot.png)
+
 ## Usage
 The application will be invoked with the following command:
 ```
