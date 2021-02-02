@@ -1,7 +1,7 @@
 console.log('hit SW file');
 
-const fileCacheName = 'file-v1';
-const dataCacheName = 'data-v1';
+const fileCacheName = 'file-v2';
+const dataCacheName = 'data-v2';
 
 const filesToCache = [
     '/',
@@ -12,6 +12,7 @@ const filesToCache = [
     "/manifest.webmanifest",
     "/icons/icon-192x192.png",
     "/icons/icon-512x512.png",
+    "/icons/background.jpg",
 ];
 
 self.addEventListener('install', (event) => {
